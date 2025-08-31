@@ -43,7 +43,7 @@ export default function Contact() {
       )
       .then(
         () => {
-          setShowModal(true); // show modal on success
+          setShowModal(true);
           setFormData({ name: "", email: "", subject: "", message: "" });
           setIsSubmitting(false);
         },
@@ -54,19 +54,12 @@ export default function Contact() {
       );
   };
 
-  // Auto close modal after 3s
   useEffect(() => {
     if (showModal) {
       const timer = setTimeout(() => setShowModal(false), 3000);
       return () => clearTimeout(timer);
     }
   }, [showModal]);
-
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true); // mark that client has mounted
-  }, []);
 
   return (
     <section
@@ -80,7 +73,6 @@ export default function Contact() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-pink-500/5 to-pink-400/5 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Contact Content */}
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 animate-slide-up">
@@ -97,7 +89,6 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <Card className="glass-effect border-white/10">
             <CardHeader>
               <CardTitle className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">

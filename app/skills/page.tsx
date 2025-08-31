@@ -15,7 +15,6 @@ export default function Skills() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-400/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-green-500/5 to-green-400/5 rounded-full blur-3xl"></div>
       </div>
-
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <p className="bg-gradient-to-r from-green-500 to-green-400 bg-clip-text text-transparent font-medium tracking-wide uppercase text-sm mb-4">
@@ -34,8 +33,7 @@ export default function Skills() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {/* Frontend Development */}
-          <Card className="bg-gray-800/50 border-gray-700 hover:border-green-500/50 transition-all duration-300 group md:col-span-2 lg:col-span-1">
+          <Card className="bg-gray-800/50 border-gray-700 hover:border-green-500/50 transition-all duration-300 group md:col-span-2 lg:col-span-1  hover:scale-110  ">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-500/30 transition-colors">
                 <Layers className="h-8 w-8 text-green-400" />
@@ -70,8 +68,7 @@ export default function Skills() {
             </CardContent>
           </Card>
 
-          {/* Backend Development */}
-          <Card className="bg-gray-800/50 border-gray-700 hover:border-green-500/50 transition-all duration-300 group md:col-span-2 lg:col-span-1">
+          <Card className="bg-gray-800/50 border-gray-700 hover:border-green-500/50 transition-all duration-300 group md:col-span-2 lg:col-span-1 hover:scale-110">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-500/30 transition-colors">
                 <Cloud className="h-8 w-8 text-green-400" />
@@ -106,8 +103,7 @@ export default function Skills() {
             </CardContent>
           </Card>
 
-          {/* Full-Stack Solutions */}
-          <Card className="bg-gray-800/50 border-gray-700 hover:border-green-500/50 transition-all duration-300 group md:col-span-2 lg:col-span-1">
+          <Card className="bg-gray-800/50 border-gray-700 hover:border-green-500/50 transition-all duration-300 group md:col-span-2 lg:col-span-1 hover:scale-110">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-500/30 transition-colors">
                 <Settings className="h-8 w-8 text-green-400" />
@@ -152,8 +148,7 @@ export default function Skills() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Programming Languages */}
-            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700 transform transition-transform duration-300 hover:scale-110 ">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mr-4">
                   <Terminal className="h-6 w-6 text-white" />
@@ -202,8 +197,7 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* Frontend Technologies */}
-            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700 transform transition-transform duration-300 hover:scale-110 ">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
                   <Layers className="h-6 w-6 text-white" />
@@ -250,8 +244,7 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* Backend & Database */}
-            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700 transform transition-transform duration-300 hover:scale-110 ">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
                   <Cloud className="h-6 w-6 text-white" />
@@ -300,8 +293,7 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* Development Tools */}
-            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700 md:col-span-2 lg:col-span-3">
+            <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700 md:col-span-2 lg:col-span-3 transform transition-transform duration-300 hover:scale-105 ">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
                   <Settings className="h-6 w-6 text-white" />
@@ -382,6 +374,7 @@ export default function Skills() {
           </div>
         </div>
       </div>
+      3
     </section>
   );
 }
