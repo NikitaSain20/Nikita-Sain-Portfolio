@@ -63,7 +63,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 mt-2"
                   onClick={() => {
@@ -93,6 +93,58 @@ export default function Home() {
                             className="absolute top-3 right-3 text-gray-400 hover:text-white"
                           >
                             <div className="w-5 h-5">X</div>
+                          </button>
+
+                          <h2 className="text-xl font-bold mb-2 text-yellow-400">
+                            ✅ Download Successful
+                          </h2>
+                          <p className="text-gray-300">
+                            Your resume has been downloaded successfully.
+                          </p>
+
+                          <div className="mt-4 flex justify-end">
+                            <button
+                              onClick={() => setIsOpen(false)}
+                              className="bg-yellow-500 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </>
+                )}
+              </div> */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 mt-1"
+                  onClick={() => {
+                    const element = document.getElementById("contact");
+                    if (element) element.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  Contact Me
+                </Button>
+
+                {isClient && (
+                  <>
+                    <button
+                      onClick={handleDownload}
+                      className="border-2 border-gray-600 text-gray-300 hover:bg-gray-800 px-4  rounded-lg font-semibold transition-all duration-300 bg-transparent flex items-center justify-center hover:scale-105"
+                    >
+                      <Download className="mr-2 h-4 w-5" />
+                      Download Resume
+                    </button>
+
+                    {isOpen && (
+                      <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
+                        <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-sm w-full relative">
+                          <button
+                            onClick={() => setIsOpen(false)}
+                            className="absolute top-3 right-3 text-gray-400 hover:text-white"
+                          >
+                            ✕
                           </button>
 
                           <h2 className="text-xl font-bold mb-2 text-yellow-400">

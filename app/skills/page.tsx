@@ -374,7 +374,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      3
     </section>
   );
 }
