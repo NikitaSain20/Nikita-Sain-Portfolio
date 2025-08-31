@@ -35,7 +35,7 @@ export default function Home() {
       <div className="lg:mr-24">
         <section
           id="home"
-          className="min-h-screen flex items-center justify-center px-4 lg:px-8 relative overflow-hidden pt-20"
+          className="flex items-center justify-center px-4 lg:px-8 relative overflow-hidden pt-20"
         >
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
@@ -56,10 +56,10 @@ export default function Home() {
                   I am Software Developer
                 </p>
                 <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
-                  From Punjab, India, I'm a full-stack software developer
-                  working passionately about making great web experiences. I am
-                  good at everything, I love to talk with you about your
-                  project.
+                  Hi, I’m Nikita Sain, a full-stack developer from Punjab,
+                  India. I’m passionate about creating smooth and engaging web
+                  experiences. I enjoy working across the stack and would love
+                  to chat with you about your project.
                 </p>
               </div>
 
@@ -87,12 +87,12 @@ export default function Home() {
                     {isOpen && (
                       <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
                         <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-sm w-full relative">
-                          <button
+                          {/* <button
                             onClick={() => setIsOpen(false)}
                             className="absolute top-3 right-3 text-gray-400 hover:text-white"
                           >
                             ✕
-                          </button>
+                          </button> */}
 
                           <h2 className="text-xl font-bold mb-2 text-yellow-400">
                             ✅ Download Successful
@@ -159,7 +159,7 @@ export default function Home() {
                 </div>
 
                 <div
-                  className="absolute -top-4 -right-24 bg-gray-800/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-700 transform transition-transform duration-300 
+                  className="absolute md:-top-4 md:-right-24 bg-gray-800/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-700 transform transition-transform duration-300 
                 hover:scale-110"
                 >
                   <div className="text-center">
