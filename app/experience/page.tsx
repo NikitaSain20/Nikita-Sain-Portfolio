@@ -31,7 +31,7 @@ export default function Experience() {
 
         <div className="space-y-8">
           {/* Job 1 */}
-          <Card className="glass-effect border-white/10">
+          <Card className="glass-effect border-white/10 md:hover:scale-105">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
@@ -92,7 +92,7 @@ export default function Experience() {
             </CardContent>
           </Card>
 
-          <Card className="glass-effect border-white/10">
+          <Card className="glass-effect border-white/10 md:hover:scale-105">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
@@ -148,7 +148,7 @@ export default function Experience() {
             </CardContent>
           </Card>
 
-          <Card className="glass-effect border-white/10">
+          <Card className="glass-effect border-white/10 md:hover:scale-105">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>

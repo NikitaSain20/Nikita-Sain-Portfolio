@@ -21,7 +21,7 @@ export default function Home() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/Nikita-Resume.pdf";
     link.download = "Nikita_Sain_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -31,11 +31,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="h-full 2xl:min-h-screen bg-background text-foreground">
       <div className="lg:mr-24">
         <section
           id="home"
-          className="flex items-center justify-center px-4 lg:px-8 relative overflow-hidden pt-20"
+          className="2xl:min-h-screen flex items-center justify-center px-4 lg:px-8 relative overflow-hidden pt-20"
         >
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
@@ -43,7 +43,7 @@ export default function Home() {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-yellow-500/5 to-yellow-400/5 rounded-full blur-3xl"></div>
           </div>
 
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
+          <div className="max-w-7xl mx-auto grid 2xl:grid-cols-2 gap-28 md:gap-12 items-center relative z-10">
             <div className="space-y-8 animate-slide-in-left">
               <div className="space-y-4">
                 <p className="text-yellow-400 font-medium tracking-wide uppercase text-sm">
@@ -87,13 +87,6 @@ export default function Home() {
                     {isOpen && (
                       <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
                         <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-sm w-full relative">
-                          {/* <button
-                            onClick={() => setIsOpen(false)}
-                            className="absolute top-3 right-3 text-gray-400 hover:text-white"
-                          >
-                            ✕
-                          </button> */}
-
                           <h2 className="text-xl font-bold mb-2 text-yellow-400">
                             ✅ Download Successful
                           </h2>
@@ -153,17 +146,17 @@ export default function Home() {
                       width={400}
                       height={400}
                       className="w-full h-full object-cover transform transition-transform duration-300 
-                hover:scale-105"
+                md:hover:scale-105"
                     />
                   </div>
                 </div>
 
                 <div
-                  className="absolute md:-top-4 md:-right-24 bg-gray-800/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-700 transform transition-transform duration-300 
+                  className="absolute -top-16 -right-0 md:-top-12 md:-right-12 lg:-top-4 lg:-right-24 bg-gray-800/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-700 transform transition-transform duration-300 
                 hover:scale-110"
                 >
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-yellow-400">
+                    <div className="text-lg md:text-2xl font-bold text-yellow-400">
                       Software Developer
                     </div>
                     <div className="text-sm text-gray-400">Nikita Sain</div>

@@ -30,7 +30,7 @@ export default function About() {
               alt="Nikita coding workspace"
               width={400}
               height={500}
-              className="transform transition-transform duration-300 hover:scale-110 rounded-2xl shadow-2xl mx-auto border border-white/10"
+              className="transform transition-transform duration-300 md:hover:scale-105 rounded-2xl shadow-2xl mx-auto border border-white/10"
             />
           </div>
 
@@ -48,7 +48,7 @@ export default function About() {
             </p>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="glass-effect p-4 rounded-xl">
+              <div className="glass-effect  p-4 rounded-xl">
                 <div className="flex items-center mb-2">
                   <GraduationCap className="h-5 w-5 text-blue-400 mr-2" />
                   <h4 className="font-semibold">Education</h4>

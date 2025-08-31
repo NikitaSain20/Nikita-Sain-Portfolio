@@ -89,7 +89,7 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <Card className="glass-effect border-white/10">
+          <Card className="glass-effect md:hover:scale-105 border-white/10">
             <CardHeader>
               <CardTitle className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
                 Send Message
@@ -168,7 +168,7 @@ export default function Contact() {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            <Card className="glass-effect border-white/10">
+            <Card className="glass-effect md:hover:scale-105  border-white/10">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Mail className="h-6 w-6 text-pink-400 mr-3" />
@@ -181,7 +181,7 @@ export default function Contact() {
               </CardContent>
             </Card>
 
-            <Card className="glass-effect border-white/10">
+            <Card className="glass-effect md:hover:scale-105  border-white/10">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <MapPin className="h-6 w-6 text-pink-400 mr-3" />

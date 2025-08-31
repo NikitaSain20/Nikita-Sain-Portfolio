@@ -34,14 +34,14 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Project 1 */}
-          <Card className=" rounded-2xl overflow-hidden  border-purple-500/30 group transform transition-transform duration-300 hover:scale-110 border-2">
+          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 border-2">
             <div className="relative">
               <Image
                 src="/dial-a-meal-project.png"
                 alt="Dial a Meal"
                 width={400}
                 height={200}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-48 object-cover "
               />
               <div className="absolute top-4 right-4">
                 <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
@@ -109,14 +109,14 @@ export default function Projects() {
           </Card>
 
           {/* Project 2 */}
-          <Card className=" rounded-2xl overflow-hidden  border-purple-500/30 group transform transition-transform duration-300 hover:scale-110 border-2">
+          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 border-2">
             <div className="relative">
               <Image
                 src="/gofood-project.png"
                 alt="GoFood"
                 width={400}
                 height={200}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-48 object-cover "
               />
               <div className="absolute top-4 right-4">
                 <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
@@ -183,14 +183,14 @@ export default function Projects() {
             </CardContent>
           </Card>
 
-          <Card className=" rounded-2xl overflow-hidden  border-purple-500/30 group transform transition-transform duration-300 hover:scale-110 border-2">
+          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 border-2">
             <div className="relative">
               <Image
                 src="/archicraft-project.png"
                 alt="ArchiCraft"
                 width={400}
                 height={200}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-48 object-cover "
               />
               <div className="absolute top-4 right-4">
                 <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
@@ -250,14 +250,14 @@ export default function Projects() {
               </div>
             </CardContent>
           </Card>
-          <Card className=" rounded-2xl overflow-hidden  border-purple-500/30 group transform transition-transform duration-300 hover:scale-110 border-2">
+          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 border-2">
             <div className="relative">
               <Image
                 src="/nike-project.png"
                 alt="Nike"
                 width={400}
                 height={200}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-48 object-cover"
               />
               <div className="absolute top-4 right-4">
                 <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
