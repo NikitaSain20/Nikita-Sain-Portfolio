@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 import About from "./about/page";
 import Skills from "./skills/page";
 import Projects from "./projects/page";
@@ -28,6 +27,9 @@ export default function Home() {
     document.body.removeChild(link);
 
     setIsOpen(true);
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 3000);
   };
 
   return (
@@ -35,7 +37,7 @@ export default function Home() {
       <div className="lg:mr-24">
         <section
           id="home"
-          className="2xl:min-h-screen flex items-center justify-center px-4 lg:px-8 relative overflow-hidden pt-20"
+          className="2xl:min-h-screen flex items-center justify-center px-5 lg:px-10 relative overflow-hidden pt-24"
         >
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>

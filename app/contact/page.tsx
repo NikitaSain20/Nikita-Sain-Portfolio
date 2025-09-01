@@ -21,6 +21,7 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -60,11 +61,16 @@ export default function Contact() {
       return () => clearTimeout(timer);
     }
   }, [showModal]);
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [inputRef.current]);
 
   return (
     <section
       id="contact"
-      className="relative py-20 px-4 lg:px-8 overflow-hidden"
+      className="relative py-20 px-5 lg:px-8 overflow-hidden"
     >
       {/* Background - Pink Gradient Glow */}
       <div className="absolute inset-0 overflow-hidden">
@@ -103,6 +109,7 @@ export default function Contact() {
                       Name
                     </Label>
                     <Input
+                      ref={inputRef}
                       id="name"
                       name="name"
                       type="text"

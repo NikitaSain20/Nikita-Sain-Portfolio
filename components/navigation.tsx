@@ -70,7 +70,14 @@ export default function Navigation() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [setTheme]);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isMobileMenuOpen) setIsMobileMenuOpen(false);
+    };
 
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isMobileMenuOpen]);
   const handleNavClick = (href: string, theme: string) => {
     const targetId = href.substring(1);
     const element = document.getElementById(targetId);

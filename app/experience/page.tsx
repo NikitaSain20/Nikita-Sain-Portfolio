@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative py-20 px-4 lg:px-8 overflow-hidden"
+      className="relative py-20 px-5 lg:px-8 overflow-hidden"
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl"></div>

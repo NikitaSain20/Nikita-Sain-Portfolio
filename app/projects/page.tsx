@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative py-20 px-4 lg:px-8 overflow-hidden"
+      className="relative py-20 px-5 lg:px-8 overflow-hidden"
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl"></div>
@@ -34,7 +34,7 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Project 1 */}
-          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 border-2">
+          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 ">
             <div className="relative">
               <Image
                 src="/dial-a-meal-project.png"
