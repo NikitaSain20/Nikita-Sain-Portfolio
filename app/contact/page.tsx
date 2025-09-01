@@ -61,11 +61,6 @@ export default function Contact() {
       return () => clearTimeout(timer);
     }
   }, [showModal]);
-  useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, [inputRef.current]);
 
   return (
     <section
@@ -109,7 +104,6 @@ export default function Contact() {
                       Name
                     </Label>
                     <Input
-                      ref={inputRef}
                       id="name"
                       name="name"
                       type="text"
