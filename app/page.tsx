@@ -227,8 +227,8 @@ export default function Home() {
 
             <div className="text-center pt-8 border-t border-white/10">
               <p className="text-gray-400">
-                © 2024 Nikita Sain. Built with ❤️ using React.js and modern web
-                technologies.
+                © {new Date().getFullYear()} Nikita Sain. Built with ❤️ using
+                React.js and modern web technologies.
               </p>
             </div>
           </div>

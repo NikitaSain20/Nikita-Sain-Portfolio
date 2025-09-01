@@ -33,7 +33,6 @@ export default function Projects() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Project 1 */}
           <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 ">
             <div className="relative">
               <Image
@@ -44,7 +43,7 @@ export default function Projects() {
                 className="w-full h-48 object-cover "
               />
               <div className="absolute top-4 right-4">
-                <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
+                <Badge className="bg-purple-500 text-white border-purple-500/30">
                   Completed
                 </Badge>
               </div>
@@ -108,8 +107,7 @@ export default function Projects() {
             </CardContent>
           </Card>
 
-          {/* Project 2 */}
-          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 border-2">
+          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105">
             <div className="relative">
               <Image
                 src="/gofood-project.png"
@@ -119,7 +117,7 @@ export default function Projects() {
                 className="w-full h-48 object-cover "
               />
               <div className="absolute top-4 right-4">
-                <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
+                <Badge className="bg-purple-500 text-white border-purple-500/30">
                   Completed
                 </Badge>
               </div>
@@ -183,7 +181,7 @@ export default function Projects() {
             </CardContent>
           </Card>
 
-          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 border-2">
+          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 ">
             <div className="relative">
               <Image
                 src="/archicraft-project.png"
@@ -193,7 +191,7 @@ export default function Projects() {
                 className="w-full h-48 object-cover "
               />
               <div className="absolute top-4 right-4">
-                <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
+                <Badge className="bg-purple-500 text-white border-purple-500/30">
                   Completed
                 </Badge>
               </div>
@@ -250,7 +248,7 @@ export default function Projects() {
               </div>
             </CardContent>
           </Card>
-          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 border-2">
+          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 ">
             <div className="relative">
               <Image
                 src="/nike-project.png"
@@ -260,7 +258,7 @@ export default function Projects() {
                 className="w-full h-48 object-cover"
               />
               <div className="absolute top-4 right-4">
-                <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/30">
+                <Badge className="bg-purple-500 text-white border-purple-500/30">
                   Completed
                 </Badge>
               </div>
