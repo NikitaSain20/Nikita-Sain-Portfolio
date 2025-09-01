@@ -16,6 +16,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -44,7 +45,7 @@ export default function Contact() {
       .then(
         () => {
           setShowModal(true);
-          setFormData({ name: "", email: "", message: "" });
+          setFormData({ name: "", email: "", subject: "", message: "" });
           setIsSubmitting(false);
         },
         () => {
@@ -127,7 +128,20 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-
+                <div className="space-y-2">
+                  <Label htmlFor="subject" className="text-white">
+                    Subject
+                  </Label>
+                  <Input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                    className="glass-effect border-white/20 text-white placeholder:text-gray-400"
+                  />
+                </div>
                 <div className="space-y-2">
                   <Label htmlFor="message" className="text-white">
                     Message
