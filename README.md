@@ -30,25 +30,32 @@ Animations: Framer Motion / GSAP (if you used)
 Deployment: Vercel
 
 📸 Screenshots
-Home Page
+
+<div align="center">
+  <img src="public/Screenshot-1.png" width="45%" style="margin: 10px;" />
+  <img src="public/Screenshot-2.png" width="45%" style="margin: 10px;" />
+  <br/>
+  <img src="public/Screenshot-3.png" width="45%" style="margin: 10px;" />
+  <img src="public/Screenshot-4.png" width="45%" style="margin: 10px;" />
+</div>
 
 🚀 Getting Started
 
 Follow these steps to run the project locally:
 
-# Clone the repository
+## Clone the repository
 
 git clone https://github.com/yourusername/portfolio.git
 
-# Navigate to project folder
+## Navigate to project folder
 
 cd portfolio
 
-# Install dependencies
+## Install dependencies
 
 npm install
 
-# Start development server
+## Start development server
 
 npm run dev
 
