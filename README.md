@@ -45,7 +45,7 @@ Follow these steps to run the project locally:
 
 ## Clone the repository
 
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/NikitaSain20/Nikita-Sain-Portfolio
 
 ## Navigate to project folder
 
