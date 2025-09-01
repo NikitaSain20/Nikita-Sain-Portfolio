@@ -20,7 +20,7 @@ export default function Home() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Nikita-Resume.pdf";
+    link.href = "/Nikita-Sain-Resume.pdf";
     link.download = "Nikita_Sain_Resume.pdf";
     document.body.appendChild(link);
     link.click();
