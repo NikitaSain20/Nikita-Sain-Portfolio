@@ -98,7 +98,7 @@ export default function Navigation() {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="fixed right-8 top-1/2 transform -translate-y-1/2 z-50 hidden lg:block">
+      <nav className="fixed right-8  lg:top-1/2 transform -translate-y-1/2 z-50 hidden lg:block">
         <div className="flex flex-col space-y-4 glass-effect rounded-2xl p-4 border border-white/10">
           {navItems.map((item) => {
             const Icon = item.icon;

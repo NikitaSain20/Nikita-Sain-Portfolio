@@ -37,7 +37,7 @@ export default function Home() {
       <div className="lg:mr-24">
         <section
           id="home"
-          className="2xl:min-h-screen flex items-center justify-center px-5 lg:px-10 relative overflow-hidden pt-24 lg:py-10 "
+          className="2xl:min-h-screen flex items-center justify-center px-5 lg:px-10 relative overflow-hidden py-36"
         >
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
@@ -154,7 +154,7 @@ export default function Home() {
                 </div>
 
                 <div
-                  className="absolute -top-16 -right-0 md:-top-12 md:-right-7 xl:-top-4 xl:-right-24 bg-gray-800/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-700 transform transition-transform duration-300 
+                  className="absolute -top-16 -right-0 md:-top-12 md:-right-2 xl:-top-4 xl:-right-24 bg-gray-800/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-700 transform transition-transform duration-300 
                 hover:scale-110"
                 >
                   <div className="text-center">

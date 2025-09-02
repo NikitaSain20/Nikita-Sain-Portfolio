@@ -5,7 +5,7 @@ import { GraduationCap, Code, Target, Building } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-20 px-5 lg:px-8 overflow-hidden">
+    <section id="about" className="relative py-28 px-5 lg:px-8 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
