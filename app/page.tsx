@@ -45,7 +45,7 @@ export default function Home() {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-yellow-500/5 to-yellow-400/5 rounded-full blur-3xl"></div>
           </div>
 
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-28 md:gap-12 items-center relative z-10">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-1 2xl:grid-cols-2 gap-28 md:gap-12 items-center relative z-10">
             <div className="space-y-8 animate-slide-in-left">
               <div className="space-y-4">
                 <p className="text-yellow-400 font-medium tracking-wide uppercase text-sm">
