@@ -154,7 +154,7 @@ export default function Home() {
                 </div>
 
                 <div
-                  className="absolute -top-16 -right-0 md:-top-12 md:-right-2 xl:-top-4 xl:-right-24 bg-gray-800/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-700 transform transition-transform duration-300 
+                  className="absolute -top-16 -right-0 md:-top-12 md:-right-6 lg:-top-14 lg:-right-1 xl:-right-4 bg-gray-800/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-700 transform transition-transform duration-300 
                 hover:scale-110"
                 >
                   <div className="text-center">
