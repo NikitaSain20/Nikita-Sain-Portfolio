@@ -204,7 +204,7 @@ export default function Home() {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href="nikitasen664@gmail.com"
+                    href="mailto:nikitasen664@gmail.com"
                     className="social-link p-2 rounded-full"
                   >
                     <Mail className="h-5 w-5" />
