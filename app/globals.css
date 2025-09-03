@@ -13,10 +13,11 @@
     --muted-foreground: rgba(255, 255, 255, 0.7);
 
     /* Dynamic theme colors */
-    --gradient-start: #00c6ff;
-    --gradient-end: #0072ff;
-    --accent-color: #00c6ff;
-    --accent-rgb: 0, 198, 255;
+  --gradient-start: #ffd700; /* home start color */
+  --gradient-end: #ffb300;   /* home end color */
+  --accent-color: #ffd700;
+  --accent-rgb: 255, 215, 0;
+
   }
 
   html {
