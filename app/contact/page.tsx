@@ -21,7 +21,6 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -65,9 +64,9 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-20 px-5 lg:px-8 overflow-hidden"
+      className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-x-hidden"
     >
-      {/* Background - Pink Gradient Glow */}
+      {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-400/10 rounded-full blur-3xl"></div>
@@ -89,8 +88,9 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <Card className="glass-effect md:hover:scale-105 border-white/10">
+        <div className="grid lg:grid-cols-2 gap-12 w-full min-w-0">
+          {/* Form Card */}
+          <Card className="glass-effect md:hover:scale-105 border-white/10 w-full min-w-0">
             <CardHeader>
               <CardTitle className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
                 Send Message
@@ -98,7 +98,7 @@ export default function Contact() {
             </CardHeader>
             <CardContent>
               <form ref={form} onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-white">
                       Name
@@ -168,8 +168,8 @@ export default function Contact() {
           </Card>
 
           {/* Contact Info */}
-          <div className="space-y-8">
-            <Card className="glass-effect md:hover:scale-105  border-white/10">
+          <div className="space-y-8 w-full min-w-0">
+            <Card className="glass-effect md:hover:scale-105 border-white/10 w-full min-w-0">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Mail className="h-6 w-6 text-pink-400 mr-3" />
@@ -182,7 +182,7 @@ export default function Contact() {
               </CardContent>
             </Card>
 
-            <Card className="glass-effect md:hover:scale-105  border-white/10">
+            <Card className="glass-effect md:hover:scale-105 border-white/10 w-full min-w-0">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <MapPin className="h-6 w-6 text-pink-400 mr-3" />
@@ -193,7 +193,7 @@ export default function Contact() {
                   Open to remote opportunities
                 </p>
 
-                <div className="flex space-x-3 mt-4">
+                <div className="flex flex-wrap gap-3 mt-4">
                   <a
                     href="https://github.com/NikitaSain20"
                     target="_blank"

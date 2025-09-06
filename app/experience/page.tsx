@@ -30,7 +30,7 @@ export default function Experience() {
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 lg:space-y-12">
           {experiencesData.map((exp: ExperienceDataType, index) => (
             <Card
               key={index}
