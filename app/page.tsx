@@ -183,8 +183,8 @@ export default function Home() {
                   Nikita Sain
                 </h3>
                 <p className="text-gray-400 mb-4">
-                  Software Developer Intern passionate about creating innovative
-                  web solutions and learning new technologies.
+                  Software Developer passionate about creating innovative web
+                  solutions and learning new technologies.
                 </p>
                 <div className="flex space-x-4">
                   <a
@@ -228,7 +228,7 @@ export default function Home() {
             <div className="text-center pt-8 border-t border-white/10">
               <p className="text-gray-400">
                 © {new Date().getFullYear()} Nikita Sain. Built with ❤️ using
-                React.js and modern web technologies.
+                Next.js and modern web technologies.
               </p>
             </div>
           </div>
