@@ -37,10 +37,10 @@ export default function Contact() {
     setIsSubmitting(true);
     emailjs
       .send(
-        "service_isyg96f",
-        "template_indo7i1",
+        process.env.NEXT_PUBLIC_SERVICEID || "",
+        process.env.NEXT_PUBLIC_TEMPLATEID || "",
         formData,
-        "dyDKn3rTD3f6SCO4b"
+        process.env.NEXT_PUBLIC_USERID || ""
       )
       .then(
         () => {

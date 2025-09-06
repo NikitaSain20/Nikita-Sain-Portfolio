@@ -2,6 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { experiencesData } from "@/components/constants/experience";
 
 export default function Experience() {
   return (
@@ -31,7 +32,7 @@ export default function Experience() {
 
         <div className="space-y-8">
           {/* Job 1 */}
-          <Card className="glass-effect border-white/10 md:hover:scale-105">
+          {/* <Card className="glass-effect border-white/10 md:hover:scale-105">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
@@ -39,7 +40,7 @@ export default function Experience() {
                     Software Developer
                   </h3>
                   <p className="text-xl text-gray-300">
-                    Pensylvenia Enterprices Ltd, Punjab
+                    Pensylvenia Enterprices Private Limited, Jalandhar, Punjab
                   </p>
                 </div>
                 <div className="text-right">
@@ -51,16 +52,19 @@ export default function Experience() {
               </div>
               <ul className="list-disc list-inside space-y-2 text-gray-300">
                 <li>
-                  Worked on full-stack web applications using React.js, Node.js,
-                  Express, and MongoDB.
+                  Gained practical expertise in Next.js, Tailwind CSS, and
+                  Strapi CMS by experimenting with prototypes and translating
+                  concepts into client-ready applications.
                 </li>
                 <li>
-                  Collaborated with the development team to build reusable UI
-                  components and implement REST APIs.
+                  Collaborated with the team on GitHub to develop client
+                  projects, focusing on frontend logic, UI development, and
+                  reusable component design.
                 </li>
                 <li>
-                  Improved application performance and optimized database
-                  queries.
+                  Followed industry-level coding conventions, project
+                  structures, and best practices while enhancing applications
+                  with Redux, Formik, GSAP, and Framer Motion.
                 </li>
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
@@ -99,7 +103,9 @@ export default function Experience() {
                   <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent mb-2">
                     Trainee
                   </h3>
-                  <p className="text-xl text-gray-300">O7 Services, Punjab</p>
+                  <p className="text-xl text-gray-300">
+                    O7 Services, Jalandhar, Punjab
+                  </p>
                 </div>
                 <div className="text-right">
                   <Badge className="bg-orange-500/20 text-orange-300 border-orange-500/30">
@@ -110,14 +116,17 @@ export default function Experience() {
               </div>
               <ul className="list-disc list-inside space-y-2 text-gray-300">
                 <li>
-                  Gained practical exposure to React, Firebase, and Cloud
-                  integration.
+                  Gained hands-on experience with React, Firebase, and GitHub
+                  for modern web development.
                 </li>
                 <li>
-                  Built real-time web applications and practiced deployment
-                  workflows.
+                  Developed and deployed real-time web applications while
+                  practicing version control and deployment workflows.
                 </li>
-                <li>Worked on small client projects under mentorship.</li>
+                <li>
+                  Collaborated on small-scale projects under mentorship,
+                  applying industry-level coding practices.
+                </li>
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
                 <Badge
@@ -177,8 +186,7 @@ export default function Experience() {
                   applications.
                 </li>
                 <li>
-                  Actively participated in coding contests, hackathons, and
-                  group projects.
+                  Actively participated in coding contests and group projects.
                 </li>
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
@@ -208,7 +216,48 @@ export default function Experience() {
                 </Badge>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
+          {experiencesData.map((exp: ExperienceDataType, index) => (
+            <Card
+              key={index}
+              className="glass-effect border-white/10 md:hover:scale-105"
+            >
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent mb-2">
+                      {exp.role}
+                    </h3>
+                    <p className="text-xl text-gray-300">{exp.company}</p>
+                  </div>
+                  <div className="text-right">
+                    <Badge className="bg-orange-500/20 text-orange-300 border-orange-500/30">
+                      {exp.status}
+                    </Badge>
+                    <p className="text-gray-400 mt-2">{exp.duration}</p>
+                  </div>
+                </div>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-300">
+                  {exp.highlights.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {exp.tech.map((item, i) => (
+                    <Badge
+                      key={i}
+                      variant="outline"
+                      className="border-orange-500/30 text-orange-300"
+                    >
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

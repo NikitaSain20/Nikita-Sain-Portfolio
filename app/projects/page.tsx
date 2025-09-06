@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
+import { projectsData } from "@/components/constants/project";
 
 export default function Projects() {
   return (
@@ -32,295 +33,67 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 ">
-            <div className="relative">
-              <Image
-                src="/dial-a-meal-project.png"
-                alt="Dial a Meal"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover "
-              />
-              <div className="absolute top-4 right-4">
-                <Badge className="bg-purple-500 text-white border-purple-500/30">
-                  Completed
-                </Badge>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+          {projectsData.map((project: ProjectDataType, index) => (
+            <Card
+              key={index}
+              className="rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105"
+            >
+              <div className="relative">
+                <Image
+                  src={project.image}
+                  alt={project.alt}
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute top-4 right-4">
+                  <Badge className="bg-purple-500 text-white border-purple-500/30">
+                    {project.status}
+                  </Badge>
+                </div>
               </div>
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2">Dial a Meal</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                A user-friendly web application offering customizable tiffin
-                service plans (daily, weekly, monthly). Users can personalize
-                their meal plans through a responsive UI.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  React.js
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  Firebase
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  Tailwind CSS
-                </Badge>
-              </div>
-              <div className="flex gap-3">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="btn-outline bg-transparent"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/NikitaSain20/Dial-A-Meal-React-Firebase",
-                      "_blank"
-                    )
-                  }
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  Code
-                </Button>
-                <Button
-                  size="sm"
-                  className="btn-primary"
-                  onClick={() =>
-                    window.open(
-                      "https://dial-a-meal-react-firebase.vercel.app/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Demo
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
 
-          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105">
-            <div className="relative">
-              <Image
-                src="/gofood-project.png"
-                alt="GoFood"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover "
-              />
-              <div className="absolute top-4 right-4">
-                <Badge className="bg-purple-500 text-white border-purple-500/30">
-                  Completed
-                </Badge>
-              </div>
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2">GoFood</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                A MERN stack-based food ordering platform with features like
-                user authentication, categorized food listings, dynamic cart
-                system, and real-time order management.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  MongoDB
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  Express.js
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  Node.js
-                </Badge>
-              </div>
-              <div className="flex gap-3">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="btn-outline bg-transparent"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/NikitaSain20/Go-Food-Mern",
-                      "_blank"
-                    )
-                  }
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  Code
-                </Button>
-                <Button
-                  size="sm"
-                  className="btn-primary"
-                  onClick={() =>
-                    window.open(
-                      "https://go-food-mern-five.vercel.app/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Demo
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-gray-300 mb-4 text-sm">
+                  {project.description}
+                </p>
 
-          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 ">
-            <div className="relative">
-              <Image
-                src="/archicraft-project.png"
-                alt="ArchiCraft"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover "
-              />
-              <div className="absolute top-4 right-4">
-                <Badge className="bg-purple-500 text-white border-purple-500/30">
-                  Completed
-                </Badge>
-              </div>
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2">ArchiCraft</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                A platform where users can request custom architectural designs.
-                Admins manage orders, set pricing, and deliver final designs
-                post-payment, with role-based functionality.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  React.js
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  Firebase
-                </Badge>
-              </div>
-              <div className="flex gap-3">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="btn-outline bg-transparent"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/NikitaSain20/ArchiCraft-React-Firebase",
-                      "_blank"
-                    )
-                  }
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  Code
-                </Button>
-                <Button
-                  size="sm"
-                  className="btn-primary"
-                  onClick={() =>
-                    window.open(
-                      "https://archi-craft-react-firebase.vercel.app/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Demo
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className=" rounded-2xl overflow-hidden glass-effect border-white/10 group transform transition-transform duration-300 md:hover:scale-105 ">
-            <div className="relative">
-              <Image
-                src="/nike-project.png"
-                alt="Nike"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
-              <div className="absolute top-4 right-4">
-                <Badge className="bg-purple-500 text-white border-purple-500/30">
-                  Completed
-                </Badge>
-              </div>
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2">Nike Animation</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                Created a dynamic landing page with Next.js and GSAP featuring
-                smooth scroll-triggered animations. Enhanced user experience
-                with interactive, visually engaging section transitions.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  Next.js
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  Tailwind
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-xs border-purple-500/30 text-purple-300"
-                >
-                  GSAP
-                </Badge>
-              </div>
-              <div className="flex gap-3">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="btn-outline bg-transparent"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/NikitaSain20/Next-Gsap-Nike-Animation",
-                      "_blank"
-                    )
-                  }
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  Code
-                </Button>
-                <Button
-                  size="sm"
-                  className="btn-primary"
-                  onClick={() =>
-                    window.open(
-                      "https://next-gsap-nike-animation.vercel.app/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Demo
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((tech, i) => (
+                    <Badge
+                      key={i}
+                      variant="outline"
+                      className="text-xs border-purple-500/30 text-purple-300"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+
+                <div className="flex gap-3">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="btn-outline bg-transparent"
+                    onClick={() => window.open(project.codeLink, "_blank")}
+                  >
+                    <Github className="mr-2 h-4 w-4" />
+                    Code
+                  </Button>
+                  <Button
+                    size="sm"
+                    className="btn-primary"
+                    onClick={() => window.open(project.demoLink, "_blank")}
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Demo
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
